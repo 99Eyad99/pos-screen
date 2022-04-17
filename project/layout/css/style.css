@@ -1,0 +1,164 @@
+body{
+    background-color: #dcdde1;
+}
+
+.item-check{
+    width: 500px;
+    height: 100vh;
+    background-color: white;
+    float: left;
+}
+
+.item-check .panel-control{
+    margin: 5px 0px 5px 15px;
+    font-size: 30px;
+}
+
+.items-table{
+    width: 100%;
+    height:70vh;
+}
+
+.items-table input{
+    width: 90%;
+    margin: 10px 0px 10px 5%;
+}
+
+.items-table table{
+    width: 90%;
+    margin: 10px 0px 10px 5%;
+}
+
+.items-table table thead{
+    background-color: black;
+    color: white;
+
+    padding: 10px;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+
+}
+
+.scrollArea{
+    max-height: 420px;
+    overflow-y: scroll; 
+}
+
+
+.quantityBtn{
+    width: 30px;
+    font-size: 19px;
+    border: none;
+    margin: 7px;
+    background-color: #7f8fa6;
+    color: white;
+}
+
+.deleteBtn{
+    width: 30px;
+    font-size: 19px;
+    border: none;
+    margin: 5px;
+    background-color: #e84118;
+    color: white;
+}
+
+.item-related{
+    float: right;
+    width: calc(100% - 500px);
+}
+
+.item-related .control-section{
+    margin: 15px 0px 15px 0px;
+}
+
+.item-related .control-section input{
+    width: 100%;
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+}
+
+#itemsDisplay{
+    height: 540px;
+    overflow-y: scroll;
+}
+
+.total-section{
+    
+    width: 90%;
+    margin: 10px 0px 10px 5%;
+}
+
+.checkout{
+    width: 100%;
+    height: 100px;
+    margin: 10px 0px 10px 0%;
+}
+
+.checkout .checkout-confirm{
+    float: left;
+    background-color: #2ecc71;
+    color: white;
+    width: 75%;
+    height: 100%;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.checkout .checkout-cancel{
+    float: right;
+    background-color: #e74c3c;
+    color: white;
+    width: 25%;
+    height: 100%;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+.item-related .card{
+    margin: 10px 0px 10px 0px;
+    width: 100%;
+    height: 200px;
+}
+
+.item-related .card img{
+  
+    width: 100%;
+    max-height: 6.5em;
+}
+
+.items-display{
+    max-height: 500px;
+}
+
+.adding_alert{
+    margin: 180px 0px 0px 40%;
+    position: fixed;
+    z-index: 2;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+   
+    .item-check{
+        width: 50px;
+        background-color: #dcdde1;
+    }
+
+    #panel-content{
+        display: none;
+    }
+
+    .item-related{
+        width: calc(100% - 50px);
+    }
+
+  }

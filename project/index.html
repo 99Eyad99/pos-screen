@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point of sale system</title>
+
+    <link rel="stylesheet" type="text/css" href="layout/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="layout/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="layout/css/style.css">
+    <link rel="stylesheet" type="text/css" href="layout/css/export.css">
+
+</head>
+
+<body>
+
+    <aside class="item-check">
+        <div class="item-check-panel">
+            <div class="panel-control">
+                <div id="adjust" onclick="displayOrderPanel()"><i class="fas fa-solid fa-bars"></i></div>
+            </div>
+            <div id="panel-content">
+                <div class="items-table">
+                    <div class="scrollArea scroll">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Sub Total</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="pendingDisplay">
+
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <h5 class="total-section">Total :<span id="grand-total"></span> </h5>
+                <div class="checkout">
+                    <button class="checkout-confirm preventOutline" onclick="checkout()"> Check out <i class="fas fa-solid fa-check"></i></button>
+                    <button class="checkout-cancel preventOutline" onclick="cancel()">cancel <i class="fas fa-times"></i></button>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <main class="item-related">
+        <div class="items-display scroll container">
+            <div class="control-section">
+                <input type="text" name="search" placeholder="search bt item name" class="preventOutline" oninput="item_search(this.value)">
+            </div>
+            <div class="row scroll" id="itemsDisplay">
+
+
+            </div>
+        </div>
+
+    </main>
+
+
+</body>
+
+<script type="text/javascript" src="layout/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="layout/js/all.min.js"></script>
+<script type="text/javascript" src="layout/js/Jquery.js"></script>
+<script type="text/javascript" src="layout/js/pos.js"></script>
+<script type="text/javascript" src="layout/js/responsive.js"></script>
+<script src="layout/js/jspdf/unpkg/jspdf.min.js"></script>
+
+
+
+</html>
